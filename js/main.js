@@ -20,8 +20,11 @@ function randomNum(min,max) {
 
  while ( arrayNum.length < howManyNumber) {
    var randomNumber = randomNum(min,max)
-   arrayNum.push(randomNumber)
-}alert('prova a ricordare questi numeri' + ' ' + arrayNum);
+   if (!arrayNum.includes(randomNumber)) {
+      arrayNum.push(randomNumber)
+   }
+ }alert('prova a ricordare questi numeri' + ' ' + arrayNum);
+ console.log(arrayNum);
 
 
   // Dopo 30 secondi l’utente deve inserire,
@@ -29,8 +32,7 @@ function randomNum(min,max) {
   var arrayUtente = []
   while (arrayUtente.length <  howManyNumber) {
   var numeriUtente = parseInt(prompt('inserisci i numeri che ti ricordi'))
-  arrayUtente.push(numeriUtente)
-
+    arrayUtente.push(numeriUtente)
 }
 console.log('i numeri che hai inserito sono i seguenti ' + arrayUtente);
 
@@ -49,7 +51,7 @@ console.log('i numeri che hai inserito sono i seguenti ' + arrayUtente);
 
  console.log('hai ricordato questi numeri' + arrayNumeriRicordati + ' ' + 'ed il tuo punteggio è' +  arrayNumeriRicordati.length);
 
-}, 30000)
+}, 500)
 
 
 
