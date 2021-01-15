@@ -49,12 +49,12 @@ function randomNum(min,max) {
  }
  console.log('hai ricordato questi numeri' + arrayNumeriRicordati + 'ed il tuo punteggio è' +  arrayNumeriRicordati.length);
  }
-}, 30000)
+}, 5000)
 
 
  // un prompt alla volta, i numeri che ha visto precedentemente.
 
-//  var arrayUtente = []
+ // var arrayUtente = []
 //  while (arrayUtente.length <  howManyNumber) {
 //  var numeriUtente = parseInt(prompt('inserisci i numeri che ti ricordi'))
 //  arrayUtente.push(numeriUtente)
