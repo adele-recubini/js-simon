@@ -40,12 +40,12 @@ console.log('i numeri che hai inserito sono i seguenti ' + arrayUtente);
  var arrayNumeriRicordati = []
 
   for (var i = 0; i < arrayNum.length; i++) {
-    if (arrayNum.includes(numeriUtente)){
-      arrayNumeriRicordati.push(numeriUtente)
+    if (arrayNum.includes(arrayUtente[i])){
+      arrayNumeriRicordati.push(arrayUtente[i])
     }
   }
 
- console.log( 'i numeri che hai ricordato correttamente sono ' + ' ' +  arrayNumeriRicordati);
+ console.log( 'i numeri che hai ricordato correttamente sono ' + ' ' +  arrayNumeriRicordati.length);
 
  console.log('hai ricordato questi numeri' + arrayNumeriRicordati + ' ' + 'ed il tuo punteggio è' +  arrayNumeriRicordati.length);
 
