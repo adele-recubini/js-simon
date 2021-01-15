@@ -25,29 +25,48 @@ function randomNum(min,max) {
  while ( arrayNum.length < howManyNumber) {
    var randomNumber = randomNum(min,max)
    arrayNum.push(randomNumber)
-}
-  alert('prova a ricordare questi numeri' + ' ' + arrayNum);
-  console.log(arrayNum);
+}alert('prova a ricordare questi numeri' + ' ' + arrayNum);
+
+
+
 
 
   // Dopo 30 secondi l’utente deve inserire,
+  setTimeout(function() {
+  var arrayUtente = []
+  while (arrayUtente.length <  howManyNumber) {
+  var numeriUtente = parseInt(prompt('inserisci i numeri che ti ricordi'))
+  arrayUtente.push(numeriUtente)
+   console.log('i numeri che hai inserito sono i seguenti ' + arrayUtente);
+
+
+ // Una volta inseriti i 5 numeri, il software dice quanti e quali numeri sono stati ricordati.
+
+ var arrayNumeriRicordati= []
+
+ if (arrayNum.includes(numeriUtente)){
+   arrayNumeriRicordati.push(numeriUtente)
+ }
+ console.log('hai ricordato questi numeri' + arrayNumeriRicordati + 'ed il tuo punteggio è' +  arrayNumeriRicordati.length);
+ }
+}, 30000)
 
 
  // un prompt alla volta, i numeri che ha visto precedentemente.
 
- var arrayUtente = []
- while (arrayUtente.length <  howManyNumber) {
- var numeriUtente = parseInt(prompt('inserisci i numeri che ti ricordi'))
- arrayUtente.push(numeriUtente)
-console.log('i numeri che hai inserito sono i seguenti ' + arrayUtente);
-
-
-// Una volta inseriti i 5 numeri, il software dice quanti e quali numeri sono stati ricordati.
-
-var arrayNumeriRicordati= []
-
-if (arrayNum.includes(numeriUtente)){
-  arrayNumeriRicordati.push(numeriUtente)
-}
-console.log('hai ricordato questi numeri' + arrayNumeriRicordati + 'ed il tuo punteggio è' +  arrayNumeriRicordati.length);
-}
+//  var arrayUtente = []
+//  while (arrayUtente.length <  howManyNumber) {
+//  var numeriUtente = parseInt(prompt('inserisci i numeri che ti ricordi'))
+//  arrayUtente.push(numeriUtente)
+// console.log('i numeri che hai inserito sono i seguenti ' + arrayUtente);
+//
+//
+// // Una volta inseriti i 5 numeri, il software dice quanti e quali numeri sono stati ricordati.
+//
+// var arrayNumeriRicordati= []
+//
+// if (arrayNum.includes(numeriUtente)){
+//   arrayNumeriRicordati.push(numeriUtente)
+// }
+// console.log('hai ricordato questi numeri' + arrayNumeriRicordati + 'ed il tuo punteggio è' +  arrayNumeriRicordati.length);
+// }
