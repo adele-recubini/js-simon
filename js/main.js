@@ -49,7 +49,7 @@ console.log('i numeri che hai inserito sono i seguenti ' + arrayUtente);
 
  console.log('hai ricordato questi numeri' + arrayNumeriRicordati + ' ' + 'ed il tuo punteggio è' +  arrayNumeriRicordati.length);
 
-}, 5000)
+}, 30000)
 
 
 
