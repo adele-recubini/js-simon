@@ -30,9 +30,17 @@ function randomNum(min,max) {
   // Dopo 30 secondi l’utente deve inserire,
   setTimeout(function() {
   var arrayUtente = []
+  var numeriUtente
   while (arrayUtente.length <  howManyNumber) {
-  var numeriUtente = parseInt(prompt('inserisci i numeri che ti ricordi'))
-    arrayUtente.push(numeriUtente)
+  numeriUtente = parseInt(prompt('inserisci i numeri che ti ricordi'))
+
+    if (numeriUtente > 100 || numeriUtente < 0  || isNaN(numeriUtente)) {
+     alert('i numeri devono essere compresi tra 1 e 100 e non puoi inserire lettere !')
+   }else {
+     arrayUtente.push(numeriUtente)
+   }
+
+
 }
 console.log('i numeri che hai inserito sono i seguenti ' + arrayUtente);
 
